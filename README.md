@@ -12,7 +12,7 @@ Los modelos fundacionales son pilares en la investigación y desarrollo de técn
 
 - **Enlaces a Entregables**:
   - **Paper**: Documentamos nuestros hallazgos, metodología y conclusiones en un documento científico que profundiza en la aplicación de modelos fundamentales en imágenes médicas [PDF](https://github.com/niclasDc/Foundational-Models-Example/blob/main/entregables/Foundational_Models_MAM.pdf).
-  - **Video**: Presentamos visualmente nuestros resultados y demostraciones clave para una comprensión más accesible.
+  - **Video**: Presentamos visualmente nuestros resultados y demostraciones clave para una comprensión más accesible. [Youtube](https://youtu.be/s-0Sw0E_N_M?si=4xYvLWEe4DU6l9oR)
   - **Otros Repositorios**: Proporcionamos enlaces a repositorios adicionales que contienen ejercicios del libro understanding deep learning.
     - Nicolas Alvarez Triana: [github](https://github.com/niclasDc/Notebooks-Understanding-DL.git)
     - Laura Nicole Bermúdez Santa: [github](https://github.com/bermudez05/Understanding-DL---MPAM.git)
