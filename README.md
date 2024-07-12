@@ -15,7 +15,7 @@ Los modelos fundacionales son pilares en la investigación y desarrollo de técn
   - **Video**: Presentamos visualmente nuestros resultados y demostraciones clave para una comprensión más accesible.
   - **Otros Repositorios**: Proporcionamos enlaces a repositorios adicionales que contienen ejercicios del libro understanding deep learning.
     - Nicolas Alvarez Triana: [github](https://github.com/niclasDc/Notebooks-Understanding-DL.git)
-    - Nicol Bermudez Santa: [github](https://github.com/bermudez05/Understanding-DL---MPAM.git)
+    - Nicole Bermudez Santa: [github](https://github.com/bermudez05/Understanding-DL---MPAM.git)
 
 Este repositorio no solo actúa como un registro de nuestro trabajo experimental, sino también como un recurso educativo y colaborativo para la comunidad interesada en modelos fundacionales y su aplicación en el procesamiento avanzado de imágenes médicas.
 
