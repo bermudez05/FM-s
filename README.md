@@ -11,7 +11,7 @@ Los modelos fundacionales son pilares en la investigación y desarrollo de técn
 - **Notebook de Experimentación**: Incluimos un notebook detallado donde realizamos experimentos exhaustivos con el modelo cheXzero. Exploramos su capacidad de generalización, precisión y eficiencia en nuestro dominio específico [notebook](https://github.com/rajpurkarlab/CheXzero/blob/main/notebooks/zero_shot.ipynb).
 
 - **Enlaces a Entregables**:
-  - **Paper**: Documentamos nuestros hallazgos, metodología y conclusiones en un documento científico que profundiza en la aplicación de modelos fundamentales en imágenes médicas.
+  - **Paper**: Documentamos nuestros hallazgos, metodología y conclusiones en un documento científico que profundiza en la aplicación de modelos fundamentales en imágenes médicas [PDF](https://github.com/niclasDc/Foundational-Models-Example/blob/main/entregables/Foundational_Models_MAM.pdf).
   - **Video**: Presentamos visualmente nuestros resultados y demostraciones clave para una comprensión más accesible.
   - **Otros Repositorios**: Proporcionamos enlaces a repositorios adicionales que contienen ejercicios del libro understanding deep learning.
     - Nicolas Alvarez Triana: [github](https://github.com/niclasDc/Notebooks-Understanding-DL.git)
