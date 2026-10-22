@@ -23,6 +23,12 @@ We studied:
 - 📊 **Slides:** [Foundation models in medical imaging: MI-Zero and CheXzero](entregables/)
 - 🎥 **Video:** [YouTube](https://youtu.be/s-0Sw0E_N_M?si=4xYvLWEe4DU6l9oR)
 
+## Team
+
+- **Laura Nicole Bermúdez Santa** · [@bermudez05](https://github.com/bermudez05)
+- **Juan Sebastián Castro Pardo** · [@SebastianCastro23](https://github.com/SebastianCastro23)
+- **Nicolás Álvarez Triana** · [@niclasDc](https://github.com/niclasDc)
+
 ## Related repositories
 
 Solutions to the *Understanding Deep Learning* (Prince, 2023) notebooks, by each team member:
