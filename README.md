@@ -1,56 +1,40 @@
-# Proyecto cheXzero: Exploración de Modelos Fundacionales en Imágenes Médicas
+# Foundation Models in Medical Imaging: CheXzero & MI-Zero
 
-Este repositorio es una extensión de un proyecto académico dedicado a investigar y experimentar con modelos fundacionales en el ámbito del aprendizaje profundo aplicado a imágenes médicas. En particular, hemos clonado y adaptado el repositorio cheXzero para nuestro estudio.
+> Exploring how **vision–language foundation models** perform zero-shot pathology detection in medical images. The project reproduces and evaluates **CheXzero** on chest X-rays and studies **MI-Zero** for cancer detection in histopathology.
 
-## Modelos Fundamentales en Aprendizaje Profundo
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![CLIP](https://img.shields.io/badge/OpenAI-CLIP-412991)
 
-Los modelos fundacionales son pilares en la investigación y desarrollo de técnicas avanzadas en aprendizaje profundo. Estos modelos establecen bases sólidas en términos de arquitectura, entrenamiento y aplicaciones prácticas. En este proyecto, nos enfocamos en entender cómo modelos como cheXzero, diseñados originalmente para tareas específicas como el análisis de radiografías de tórax, pueden ser adaptados y evaluados en nuevos contextos y conjuntos de datos.
+Academic project for *Mathematics for Machine Learning*, Universidad Nacional de Colombia. This repository extends the original [CheXzero](https://github.com/rajpurkarlab/CheXzero) codebase by Rajpurkar Lab (Stanford).
 
-## Contenido del Repositorio
+## About this project
 
-- **Notebook de Experimentación**: Incluimos un notebook detallado donde realizamos experimentos exhaustivos con el modelo cheXzero. Exploramos su capacidad de generalización, precisión y eficiencia en nuestro dominio específico [notebook](https://github.com/rajpurkarlab/CheXzero/blob/main/notebooks/zero_shot.ipynb).
+Foundation models are trained once on large, mostly unlabelled data and then adapted to many tasks. CheXzero is a CLIP-style model trained on chest X-rays paired with free-text radiology reports. It can detect pathologies **without any explicit labels**, by comparing image embeddings with text prompts such as "pneumonia" / "no pneumonia".
 
-- **Enlaces a Entregables**:
-  - **Paper**: Documentamos nuestros hallazgos, metodología y conclusiones en un documento científico que profundiza en la aplicación de modelos fundamentales en imágenes médicas [PDF](https://github.com/niclasDc/Foundational-Models-Example/blob/main/entregables/Foundational_Models_MAM.pdf).
-  - **Video**: Presentamos visualmente nuestros resultados y demostraciones clave para una comprensión más accesible. [Youtube](https://youtu.be/s-0Sw0E_N_M?si=4xYvLWEe4DU6l9oR)
-  - **Otros Repositorios**: Proporcionamos enlaces a repositorios adicionales que contienen ejercicios del libro understanding deep learning.
-    - Nicolas Alvarez Triana: [github](https://github.com/niclasDc/Notebooks-Understanding-DL.git)
-    - Laura Nicole Bermúdez Santa: [github](https://github.com/bermudez05/Understanding-DL---MPAM.git)
-    - Juan Sebastián Castro Pardo: [github](https://github.com/SebastianCastro23/MathsForML.git)
+We studied:
 
-Este repositorio no solo actúa como un registro de nuestro trabajo experimental, sino también como un recurso educativo y colaborativo para la comunidad interesada en modelos fundacionales y su aplicación en el procesamiento avanzado de imágenes médicas.
+- **CheXzero (chest X-rays):** we ran the full zero-shot pipeline (preprocessing, inference, evaluation) and analysed its generalisation, accuracy and efficiency in the [`notebooks/zero_shot.ipynb`](notebooks/zero_shot.ipynb) experiment notebook.
+- **MI-Zero (histopathology):** we studied the model and attempted to run it for cancer detection in whole-slide images. The implementation could not be completed because of operating-system and library incompatibilities on our machines; the paper and video document what we learned.
 
-## Implementación de MI-Zero
+## Deliverables
 
-También intentamos implementar el modelo MI-Zero en este proyecto. Sin embargo, enfrentamos desafíos debido a incompatibilidades con el sistema operativo y las bibliotecas en nuestras computadoras, lo que nos impidió completar la implementación satisfactoriamente.
+- 📄 **Paper:** [Foundational_Models_MAM.pdf](entregables/Foundational_Models_MAM.pdf)
+- 📊 **Slides:** [Foundation models in medical imaging: MI-Zero and CheXzero](entregables/)
+- 🎥 **Video:** [YouTube](https://youtu.be/s-0Sw0E_N_M?si=4xYvLWEe4DU6l9oR)
 
-¡Explora, aprende y contribuye con nosotros mientras avanzamos en el estudio y desarrollo de estos modelos esenciales!
+## Related repositories
 
-# Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning
+Solutions to the *Understanding Deep Learning* (Prince, 2023) notebooks, by each team member:
 
-<details>
-<summary>
-  <b>Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning</b>, Nat. Biomed. Eng (2022). 
-  <a href="https://www.nature.com/articles/s41551-022-00936-9" target="blank">[Paper]</a>
-	<br><em><a href="https://www.linkedin.com/in/ekin-tiu-0aa467200/">Ekin Tiu</a>, <a href="https://www.linkedin.com/in/ellie-talius/">Ellie Talius</a>, <a href="https://www.linkedin.com/in/pujanpatel24/">Pujan Patel</a>, <a href="https://med.stanford.edu/profiles/curtis-langlotz">Curtis P. Langlotz</a>, <a href="https://www.andrewng.org/">Andrew Y. Ng</a>, <a href="https://pranavrajpurkar.squarespace.com/">Pranav Rajpurkar</a></em></br>
-</summary>
+- Nicolás Álvarez Triana: [Notebooks-Understanding-DL](https://github.com/niclasDc/Notebooks-Understanding-DL)
+- **Laura Nicole Bermúdez Santa**: [Understanding-DL---MPAM](https://github.com/bermudez05/Understanding-DL---MPAM)
+- Juan Sebastián Castro Pardo: [MathsForML](https://github.com/SebastianCastro23/MathsForML)
 
-```bash
-Tiu, E., Talius, E., Patel, P. et al. Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning. Nat. Biomed. Eng (2022). https://doi.org/10.1038/s41551-022-00936-9
-```
+---
 
-</details>
+<sub>Everything below is the original CheXzero documentation, kept for reference.</sub>
 
-<img width="848" alt="Screen Shot 2022-09-15 at 10 57 16 AM" src="https://user-images.githubusercontent.com/12751529/190451160-a919b363-6005-4cd4-9633-b194392bd728.png">
-
-This repository contains code to train a self-supervised learning model on chest X-ray images that lack explicit annotations and evalute this model's performance on pathology-classification tasks.
-
-<details>
-  <summary>
-	  <b>Main Findings</b>
-  </summary>
-
-1. **Automatically detecting pathologies in chest x-rays without explicit annotations:** Our method learns directly from the combination of images and unstructured radiology reports, thereby avoiding time-consuming labeling efforts. Our deep learning method is capable of predicting multiple pathologies and differential diagnoses that it had not explicitly seen during training.
 2. **Matching radiologist performance on different tasks on an external test set:** Our method performed on par with human performance when evaluated on an external validation set (CheXpert) of chest x-ray images labeled for the presence of 14 different conditions by multiple radiologists.
 3. **Outperforming approaches that train on explicitly labeled data on an external test set:** Using no labels, we outperformed a fully supervised approach (100% of labels) on 3 out of the 8 selected pathologies on a dataset (PadChest) collected in a different country. We further demonstrated high performance (AUC > 0.9) on 14 findings and at least 0.700 on 53 findings out of 107 radiographic findings that the method had not seen during training.
 </details>
